@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <title>Todofi</title>
+</head>
+<body>
+    <!-- Logo Container -->
+    <div id="logo-container">
+        <div class="logo" id="logo-text">
+            <h1 style="font-weight: 300;">Todofi</h1>
+        </div>
+    </div>  
+    <!-- Logo Container -->
+    <!-- Instructions -->
+    <div style="font-weight: 500;" class="app-inst">
+        <p>Swipe to complete ✅</p>
+        <p>Swipe again to uncompletion ⛔️</p>
+        <p>Tap the trash can to delete the last item 🗑</p>
+    </div>
+    <!-- Instructions -->
+    <!-- App Container -->
+    <div id="error-msg">
+        <p style="font-weight: 300;">Please enter a to-do 👋</p>
+    </div>
+    <div id="app-container">
+        <div id="input-area">
+            <input type="text" placeholder="What needs to be completed?" id="todo-input">
+            <button id="add-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="todo-container">
+            <ul id="todo-list">
+                
+            </ul>
+            <div id="delete-btn"><i class="fa-solid fa-trash-can"></i></div>
+        </div>
+    </div>
+    <!-- App Container -->
+
+
+<!-- tüm listelere checked ekleyebilir ve bunun JS'de drag ile seçilmesini sağlayabilirsin??
+    2- Yapamadığın sorunu "Node Items" ile çözebilirsin...
+    3- 'FOR OF' loop ile tek listeye işlem uygulayabilirsin.-->
+
+
+    <!-- Scripts -->
+    <script src="gsap/gsap.min.js"></script>
+    <script src="gsap/Flip.min.js"></script>
+    <script src="gsap/Draggable.min.js"></script>
+    <script src="gsap/MotionPathPlugin.min.js"></script>
+    <script src="gsap/CustomEase.min.js"></script>
+    <script src="gsap/DrawSVGPlugin.min.js"></script>
+    <script src="gsap/InertiaPlugin.min.js"></script>
+    <script src="gsap/MorphSVGPlugin.min.js"></script>
+    <script src="gsap/MotionPathHelper.min.js"></script>
+    <script src="gsap/ScrambleTextPlugin.min.js"></script>
+    <script src="gsap/SplitText.min.js"></script>
+    <script src="gsap/CustomBounce.min.js"></script>
+    <script src="gsap/CustomWiggle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+html{
+    font-size: 10px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    background-color: #374151;
+}
+.logo{
+    font-size: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #CBD5E1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.app-inst{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #E7E5E4;
+    text-align: center;
+    display: inline;
+    flex-direction: column;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+    width: 37rem;
+    height: 55rem;
+    background-color: #D4D4D4;
+    border-radius: 10px;
+    box-shadow:
+        0px 0px 5.3px rgba(0, 0, 0, 0.026),
+        0px 0px 11.4px rgba(0, 0, 0, 0.042),
+        0px 0px 19.2px rgba(0, 0, 0, 0.056),
+        0px 0px 30.9px rgba(0, 0, 0, 0.071),
+        0px 0px 52.9px rgba(0, 0, 0, 0.09),
+        0px 0px 120px rgba(0, 0, 0, 0.13)
+;
+}
+
+#todo-input{
+    padding: 1rem;
+    margin-right: .5rem;
+    margin-top: 1.7rem;
+    width: 25rem;
+    outline-color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: 1s all;
+    text-align: center;
+}
+#todo-input:focus{
+    outline-color: #A3A3A3;
+}
+#add-btn{
+    cursor: pointer;
+    border: none;
+    color: #D6D3D1;
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    position: relative;
+    top: .3rem;
+    margin-left: 1rem;
+    background-color: #52525B;
+    border-radius: 50%;
+}
+#todo-list{
+    /* background-color: red; */
+    width: 32rem;
+    height: 48rem;
+    /* position: relative; */
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+}
+#error-msg{
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #F43F5E;
+}
+ul li{
+    background-color: #E4E4E7;
+    font-size: 1.7rem;
+    list-style: none;
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+    left: -3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+#delete-btn{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 4.8rem;
+    align-items: center;
+    color: #374151;
+}
+
+.done{
+    text-decoration: line-through;
+    color: #34D399;
+}
